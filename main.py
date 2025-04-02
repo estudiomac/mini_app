@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from backend.models.models import init_db
-import requests as rq
+import backend.db.requests as rq
 class AddTask(BaseModel):
     title: str
     tg_id: int
